@@ -1,6 +1,7 @@
 import { FlipWords } from '@/components/ui/Flipwords';
 import { HeroHighlight, Highlight } from '@/components/ui/Herohighlight';
 import { Spotlight } from '@/components/ui/Spotlight'
+import Image from 'next/image';
 import React from 'react'
 
 const Page = () => {
@@ -20,15 +21,21 @@ const Page = () => {
             <FlipWords words={words} className='text-purple'></FlipWords><span>User Experiences</span>
             
             <p className='text-[14px]'>
-              <Highlight>Hi! I am Souvik Maity, An Android Developer</Highlight>
+              <Highlight>Hi! I am Souvik Maiti, An Android Developer</Highlight>
             </p>
             
           </div>
           {/* Photo  */}
-          <div className='relative mt-20 md:mt-0'>
-            <div className='h-[200px] w-[200px] bg-purple rounded-xl flex items-center justify-center rotate-45'>
-              <p className='-rotate-45'>Image</p>
+          <div className='mt-20 md:mt-0 animate-float relative'>
+            <div className='h-[250px] w-[250px] bg-purple rounded-xl flex items-center justify-center'>
             </div>
+            <Image
+              src='/images/souvik_bgremove.png'
+              alt='home'
+              width={350}
+              height={350}
+              className='overflow-hidden absolute top-0 -left-3 h-[250px] w-[250px]'
+            ></Image>
           </div>
         </div>
       </div>

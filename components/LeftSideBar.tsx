@@ -4,6 +4,7 @@ import React from 'react'
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { sideBarLinks } from '@/constants';
+import Image from 'next/image';
 
 
 const LeftSideBar = () => {
@@ -11,8 +12,15 @@ const LeftSideBar = () => {
   return (
     <div className='left_sidebar sticky'>
         <nav className='flex flex-col gap-7'>
-            <Link href="/" className='flex items-center gap-1 cursor-pointer max-lg:justify-center'>
-                <div className=' w-16 h-16 bg-white-200 rounded-full'></div>
+            <Link href="/" className='flex items-center gap-3 cursor-pointer max-lg:justify-center'>
+                {/* <div className=' w-16 h-16 bg-white-200 rounded-full'></div> */}
+                <Image
+                    src="/images/souvik_profile.jpg"
+                    alt="profile"
+                    width={50}
+                    height={50}
+                    className="rounded-full aspect-square"
+                ></Image>
                 <div className='flex flex-col max-lg:hidden'>
                     <h1 className='text-lg font-bold text-white'>Souvik Maiti</h1>
                     <p className='text-sm text-white-100'>SDE</p>
