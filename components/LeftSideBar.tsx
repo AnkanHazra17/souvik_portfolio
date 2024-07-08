@@ -37,7 +37,7 @@ const LeftSideBar = () => {
                                 className={cn("flex gap-4 items-center p-3 rounded-lg justify-center lg:justify-start", {"bg-blue-500": isActive})}
                             >
                                 <item.icon size={20}></item.icon>
-                                <p className='text-lg font-semibold max-lg:hidden'>{item.label}</p>
+                                <p className='text-[16px] max-lg:hidden'>{item.label}</p>
                             </Link>
                         )
                     })

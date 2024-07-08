@@ -83,6 +83,22 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
   .left_sidebar {
-    @apply sticky left-0 top-0 h-screen flex w-fit flex-col justify-between  border-none bg-black-200 pt-8 text-white max-md:hidden lg:w-[270px] lg:pl-8;
+    @apply sticky left-0 top-0 h-screen flex w-fit flex-col justify-between  border-none bg-black-200 pt-8 text-white max-md:hidden lg:w-[230px] lg:pl-8;
   }
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.glassmorphism-auth {
+  background: rgba(6, 3, 3, 0.711);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.glassmorphism-black {
+  background: rgba(18, 18, 18, 0.64);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }

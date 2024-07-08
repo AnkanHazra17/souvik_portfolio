@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { sideBarLinks } from '@/constants';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 
 const MobileNav = () => {
@@ -16,8 +17,14 @@ const MobileNav = () => {
             <TbMenu2 size={30} className='text-white'></TbMenu2>
         </SheetTrigger>
         <SheetContent side="left" className='border-none bg-black-100'>
-            <Link href="/" className='flex items-center gap-1 cursor-pointer mt-4 max-lg:justify-center'>
-                <div className=' w-16 h-16 bg-white-200 rounded-full'></div>
+            <Link href="/" className='flex items-center gap-3 cursor-pointer mt-4 max-lg:justify-center'>
+                <Image
+                    src="/images/souvik_profile.jpg"
+                    alt="profile"
+                    width={50}
+                    height={50}
+                    className="rounded-full aspect-square"
+                ></Image>
                 <div className='flex flex-col'>
                     <h1 className='text-lg font-bold text-white'>Souvik Maiti</h1>
                     <p className='text-sm text-white-100'>SDE</p>
@@ -38,7 +45,7 @@ const MobileNav = () => {
                                             className={cn("flex gap-4 items-center text-white p-3 rounded-lg justify-start", {"bg-blue-500": isActive})}
                                         >
                                             <item.icon size={20}></item.icon>
-                                            <p className='text-lg font-semibold'>{item.label}</p>
+                                            <p className='text-[16px]'>{item.label}</p>
                                         </Link>
                                     </SheetClose>
                                 )
