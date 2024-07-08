@@ -21,7 +21,7 @@ export default function RootLayout({
             <LeftSideBar></LeftSideBar>
             <section className="flex min-h-screen flex-1 flex-col sm:px-14">
                 <div className="mx-auto flex w-full max-w-5xl flex-col max-sm:px-4">
-                    <div className="flex h-16 items-center justify-between md:hidden">
+                    <div className="flex py-2 h-16 items-center justify-between md:hidden">
                       {/* Logo */}
                         <div className="flex items-center gap-1 cursor-pointer">
                           <div className=' w-16 h-16 bg-white-200 rounded-full'></div>

@@ -9,7 +9,7 @@ import { sideBarLinks } from '@/constants';
 const LeftSideBar = () => {
     const pathName = usePathname();
   return (
-    <div className='left_sidebar'>
+    <div className='left_sidebar sticky'>
         <nav className='flex flex-col gap-7'>
             <Link href="/" className='flex items-center gap-1 cursor-pointer max-lg:justify-center'>
                 <div className=' w-16 h-16 bg-white-200 rounded-full'></div>
