@@ -7,10 +7,12 @@ import Image from 'next/image';
 import { FaLocationArrow } from "react-icons/fa6";
 import React from 'react'
 import { useRouter } from 'next/navigation';
+import useScroll from '@/hooks/useScroll';
 
 const Page = () => {
   const words = ["better", "seamless", "modern"];
   const router = useRouter();
+  
   return (
     <div className="relative">
       <div>
@@ -21,15 +23,18 @@ const Page = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         {/* Info */}
         <div className='flex w-full px-3 items-center justify-between gap-4 flex-col md:flex-row'>
-          <div className='w-full flex flex-col'>
-            <div className='text-white text-4xl font-semibold'>
-              <p>Transforming Concepts into</p>
-              <FlipWords words={words} className='text-purple'></FlipWords><span>User Experiences.</span>
+          <div className='w-full flex flex-col items-center md:items-start'>
+            <div className='flex flex-col gap-4 items-center md:items-start'>
+              <div className='text-white text-4xl font-semibold'>
+                <p>Transforming Concepts into</p>
+                <div>
+                  <FlipWords words={words} className='text-purple'></FlipWords><span>User Experiences.</span>
+                </div>
+              </div>
               
-              <p className='text-[14px]'>
+              <p className='text-[14px] text-white'>
                 <Highlight>Hi! I am Souvik Maiti, An Android Developer</Highlight>
               </p>
-
             </div>
             <div className='mt-5'>
               <MagicButton 

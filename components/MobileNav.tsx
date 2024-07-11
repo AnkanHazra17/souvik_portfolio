@@ -16,7 +16,7 @@ const MobileNav = () => {
         <SheetTrigger>
             <TbMenu2 size={30} className='text-white'></TbMenu2>
         </SheetTrigger>
-        <SheetContent side="left" className='border-none bg-black-100'>
+        <SheetContent side="left" className='border-none bg-black-100 w-[300px]'>
             <Link href="/" className='flex items-center gap-3 cursor-pointer mt-4 max-lg:justify-center'>
                 <Image
                     src="/images/souvik_profile.jpg"
