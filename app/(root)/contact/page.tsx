@@ -8,7 +8,7 @@ const Page = () => {
     <div className='py-8'>
       <SectionHeader text1='Got an idea? I have the skills' text2='Contact Me.'></SectionHeader>
 
-      <div className='flex gap-4 items-center justify-between mt-10'>
+      <div className='flex gap-4 items-center justify-between mt-10 flex-col xl:flex-row'>
         <Contactform></Contactform>
         <ContactDetails></ContactDetails>
       </div>
